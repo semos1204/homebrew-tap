@@ -11,7 +11,7 @@ class Kl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/semos1204/komlist/releases/download/v0.3.0/kl_0.3.0_darwin_amd64.tar.gz"
-      sha256 "2565fed2216ee579992da2c770c3a99f065485b96d58a037b321dad6ee49d4b9"
+      sha256 "b297ce76de979ba2d3b3cda29361c365fe792e05d6640c6972619cb0042c01f5"
 
       define_method(:install) do
         bin.install "kl"
@@ -19,7 +19,7 @@ class Kl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/semos1204/komlist/releases/download/v0.3.0/kl_0.3.0_darwin_arm64.tar.gz"
-      sha256 "2f48c2f90101074fcac20af45263a89743c86ea7ba1732ce589a00fa3e7eca83"
+      sha256 "6430c6d0e3626cc6a7b13371f2742bc91a803953058320f09dba72c24c3ebee5"
 
       define_method(:install) do
         bin.install "kl"
@@ -30,14 +30,14 @@ class Kl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/semos1204/komlist/releases/download/v0.3.0/kl_0.3.0_linux_amd64.tar.gz"
-      sha256 "201516d050ba7e79254ef4ae7ffc1e74ee5a08ce8ad03c890171979b049658ac"
+      sha256 "763ded9ad32a33d2bffe35e267ebfd93fd887f5ae787517da4e29dd50535b0e7"
       define_method(:install) do
         bin.install "kl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/semos1204/komlist/releases/download/v0.3.0/kl_0.3.0_linux_arm64.tar.gz"
-      sha256 "b969363bccaf17965a8087448cc21fc52483422fbc71888ee550508a307ee665"
+      sha256 "275203e1038bff8221817cbe487daf96a6ee4d9cf03b7c56f40e9cd269d59829"
       define_method(:install) do
         bin.install "kl"
       end
