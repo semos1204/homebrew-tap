@@ -5,21 +5,21 @@
 class Kl < Formula
   desc "A small command-line task manager"
   homepage "https://github.com/semos1204/komlist"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/semos1204/komlist/releases/download/v0.5.1/kl_0.5.1_darwin_amd64.tar.gz"
-      sha256 "b5df33939237294db2281adcb151fd88ebfc2b2cc8574e7f4557ca4511ff0b7e"
+      url "https://github.com/semos1204/komlist/releases/download/v0.6.0/kl_0.6.0_darwin_amd64.tar.gz"
+      sha256 "577ceb59ffb7e389199f480b2eba50cc5c115d091843426a91b2cf33e0609830"
 
       define_method(:install) do
         bin.install "kl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/semos1204/komlist/releases/download/v0.5.1/kl_0.5.1_darwin_arm64.tar.gz"
-      sha256 "c50132de5b62b04b1936ae66291bc4f3901aa9cc602ead83431c2a302b7c1968"
+      url "https://github.com/semos1204/komlist/releases/download/v0.6.0/kl_0.6.0_darwin_arm64.tar.gz"
+      sha256 "8bd3f58818b311e94d7e74feb57127a673bf68a63a9fa0cd051710b1373119cd"
 
       define_method(:install) do
         bin.install "kl"
@@ -29,15 +29,15 @@ class Kl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/semos1204/komlist/releases/download/v0.5.1/kl_0.5.1_linux_amd64.tar.gz"
-      sha256 "f2aa7ea2b6c1f0e7719dc6a1d28435584bc84d9e762730b5ccb6cf90d9958317"
+      url "https://github.com/semos1204/komlist/releases/download/v0.6.0/kl_0.6.0_linux_amd64.tar.gz"
+      sha256 "247ded4c595c65fa32c201c87ef31c09f62a480947520b64aa8e8e22162575bd"
       define_method(:install) do
         bin.install "kl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/semos1204/komlist/releases/download/v0.5.1/kl_0.5.1_linux_arm64.tar.gz"
-      sha256 "5db312319a70e20b35526e5e04a29d5242300822fdffe307b96662c8ea7122c6"
+      url "https://github.com/semos1204/komlist/releases/download/v0.6.0/kl_0.6.0_linux_arm64.tar.gz"
+      sha256 "c8a9929cc733dbe8642699b4ffd4e323cab727314724db66aed5bfe75d3b6687"
       define_method(:install) do
         bin.install "kl"
       end
